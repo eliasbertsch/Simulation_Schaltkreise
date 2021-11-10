@@ -1,6 +1,6 @@
 def setup():
     size(800, 800)
-    background(255, 255, 255)
+    background(255, 255, 230)
 
     
 
