@@ -6,7 +6,7 @@ def setup():
     
 #Schaltkreiserstellung
 def draw():
-
+    strokeWeight(10)
     
     line (50, 100, 150, 100)
     circle (200, 100, 100)
@@ -29,14 +29,16 @@ def draw():
     
     line (270, 300, 50, 300)
     line (50, 300, 50, 100)
-    
+
+
 #Lampen leuchten bei Klick
 def mousePressed():
+
     fill(250, 128, 0)
     circle (200, 100, 100)
     circle (400, 100, 100)
     circle (600, 100, 100)
-    line (330, 300, 270, 300)
+    line(330, 300, 270, 300)
    
 #Lampen löschen bei Release Maustaste    
 def mouseReleased():
@@ -44,8 +46,7 @@ def mouseReleased():
     circle (200, 100, 100)
     circle (400, 100, 100)
     circle (600, 100, 100)
-    del
 
    
-    
+
     
