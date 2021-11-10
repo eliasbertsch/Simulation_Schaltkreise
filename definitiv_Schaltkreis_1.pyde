@@ -3,7 +3,7 @@ def setup():
     background(255, 255, 230)
 
     
-
+#Schaltkreiserstellung
 def draw():
 
     text("Maustaste klicken", 10, 320)
@@ -30,14 +30,14 @@ def draw():
     line (270, 300, 50, 300)
     line (50, 300, 50, 100)
     
-    
+#Lampen leuchten bei Klick
 def mousePressed():
     fill(250, 128, 0)
     circle (200, 100, 100)
     circle (400, 100, 100)
     circle (600, 100, 100)
    
-    
+#Lampen löschen bei Release Maustaste    
 def mouseReleased():
     fill (255, 255, 255)
     circle (200, 100, 100)
