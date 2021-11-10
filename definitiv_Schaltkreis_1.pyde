@@ -4,7 +4,7 @@ def setup():
     fill(0,0,0)
     text("maustaste klicken", 10, 10)
     
-#Schaltkreiserstellung
+#Schaltkreiserstellung und Lampenleuchtfunktion mithilfe einfügen einer vollen Batterie
 def draw():
     if mousePressed == True:
         fill(250, 128, 0)
