@@ -1,11 +1,28 @@
 def setup():
     size(800, 800)
-    background(255, 255, 230)
+    background(255, 255, 255)
     fill(0,0,0)
     text("maustaste klicken", 10, 10)
     
 #Schaltkreiserstellung
 def draw():
+    if mousePressed == True:
+        fill(250, 128, 0)
+        circle (200, 100, 100)
+        circle (400, 100, 100)
+        circle (600, 100, 100)
+        bild1 = loadImage("Batterie_Voll.png")
+        image(bild1, 270, 290, 60, 20)
+        
+    else:
+        fill(255,255,255)
+        circle (200, 100, 100)
+        circle (400, 100, 100)
+        circle (600, 100, 100)
+        
+        bild = loadImage("Batterie_Leer.png")
+        image(bild, 270, 290, 60, 20)
+         
     strokeWeight(10)
     
     line (50, 100, 150, 100)
@@ -29,24 +46,8 @@ def draw():
     
     line (270, 300, 50, 300)
     line (50, 300, 50, 100)
+    
 
 
-#Lampen leuchten bei Klick
-def mousePressed():
-
-    fill(250, 128, 0)
-    circle (200, 100, 100)
-    circle (400, 100, 100)
-    circle (600, 100, 100)
-    line(330, 300, 270, 300)
-   
-#Lampen löschen bei Release Maustaste    
-def mouseReleased():
-    fill (255, 255, 255)
-    circle (200, 100, 100)
-    circle (400, 100, 100)
-    circle (600, 100, 100)
-
-   
 
     
