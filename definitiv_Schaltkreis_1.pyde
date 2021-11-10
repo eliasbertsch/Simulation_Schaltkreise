@@ -6,7 +6,7 @@ def setup():
 
 def draw():
 
-    text("Maustaste klicken", 10, 30)
+    text("Maustaste klicken", 10, 320)
     
     line (50, 100, 150, 100)
     circle (200, 100, 100)
