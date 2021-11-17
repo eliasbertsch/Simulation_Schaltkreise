@@ -1,11 +1,7 @@
-def setup():
-    size(800, 800)
-    background(255, 255, 255)
-    fill(0,0,0)
-    text("maustaste klicken", 10, 10)
-    
-#Schaltkreiserstellung und Lampenleuchtfunktion mithilfe einfügen einer vollen Batterie
-def draw():
+mode=1
+
+text("Klicke die Maustaste um den Stromkreis zu schliessen", 20, 30)
+
     if mousePressed == True:
         fill(250, 128, 0)
         circle (200, 100, 100)
