@@ -5,6 +5,7 @@ def setup():
     size(800, 600)
     background(255, 255, 255)
     fill(0,0,0)
+    textSize(20)
 def draw():
     global mode
     strokeWeight(10)
@@ -25,8 +26,8 @@ def draw():
     if mode == 2:
         background(255, 255, 255)
         fill(0,0,0)
-        text("Druecke die Maus um den Schaltkreis auszuprobieren", 20, 20)
-        text("Druecke A um zum Menu zuruckzukehren", 20, 400)
+        text("Druecke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)
+        text("Druecke A, um zum Menu zurueckzukehren.", 50, 460)
         if mousePressed == True:
             fill(250, 255, 0)
             circle (200, 100, 100)
@@ -71,8 +72,8 @@ def draw():
     if mode == 3:
         background(255, 255, 255)
         fill(0,0,0)
-        text("Druecke die Maus um den Schaltkreis auszuprobieren", 20, 20)
-        text("Druecke A um zum Menu zuruckzukehren", 20, 40)
+        text("Druecke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)
+        text("Druecke A, um zum Menu zuruckzukehren", 50, 460)
         if mousePressed == True:
             fill(255, 255, 0)
             circle (300, 190, 100)
