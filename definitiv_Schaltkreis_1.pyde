@@ -18,6 +18,10 @@ def draw():
         text("Druecke fuer dieses Menu die Taste A.", 20, 60) 
         text("Druecke B fuer die Serienschaltung.", 20, 130)
         text("Druecke C fuer die Paralleschaltung.", 420, 130)
+        bild1 = loadImage("Serienschaltung.jpg")
+        image(bild1, 70, 190, 260, 220)
+        bild2 = loadImage("Parallelschaltung.jpg")
+        image(bild2, 470, 190, 260, 220)
       
         
     if mode == 2:
