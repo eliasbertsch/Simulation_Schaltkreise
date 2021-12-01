@@ -6,6 +6,9 @@ def setup():
     background(255, 255, 255)
     fill(0,0,0)
     textSize(20)
+    myFont = createFont("Georgia", 20);
+    textFont(myFont);
+
 def draw():
     global mode
     strokeWeight(10)
@@ -15,9 +18,9 @@ def draw():
         line (0, 60, 800, 60)
         line (400, 60, 400, 600)
         text("Mit diesem Programm kannst du Schaltkreisschemas ausprobieren.", 20, 20)
-        text("Druecke fuer dieses Menu die Taste A", 20, 40) 
-        text("Druecke B fuer den Schaltkreis 1", 20, 100)
-        text("Druecke C fuer den Schaltkreis 2", 420, 100)
+        text(u"Drücke fuer dieses Menu die Taste A", 20, 40) 
+        text(u"Drücke B fuer den Schaltkreis 1", 20, 100)
+        text(u"Drücke C fuer den Schaltkreis 2", 420, 100)
 
 
 
@@ -26,8 +29,8 @@ def draw():
     if mode == 2:
         background(255, 255, 255)
         fill(0,0,0)
-        text("Druecke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)
-        text("Druecke A, um zum Menu zurueckzukehren.", 50, 460)
+        text(u"Drücke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)
+        text(u"Drücke A, um zum Menu zurueckzukehren.", 50, 460)
         if mousePressed == True:
             fill(250, 255, 0)
             circle (200, 100, 100)
@@ -72,8 +75,8 @@ def draw():
     if mode == 3:
         background(255, 255, 255)
         fill(0,0,0)
-        text("Druecke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)
-        text("Druecke A, um zum Menu zuruckzukehren", 50, 460)
+        text(u"Drücke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)
+        text(u"Drücke A, um zum Menu zuruckzukehren", 50, 460)
         if mousePressed == True:
             fill(255, 255, 0)
             circle (300, 190, 100)
