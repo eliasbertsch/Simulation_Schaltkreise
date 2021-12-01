@@ -12,16 +12,13 @@ def draw():
     if mode == 1:
         background(255, 255, 255)
         fill(0,0,0)
-        line (0, 60, 800, 60)
-        line (400, 60, 400, 600)
-        text("Mit diesem Programm kannst du Schaltkreisschemas ausprobieren.", 20, 20)
-        text("Druecke fuer dieses Menu die Taste A", 20, 40) 
-        text("Druecke B fuer den Schaltkreis 1", 20, 100)
-        text("Druecke C fuer den Schaltkreis 2", 420, 100)
-
-
-
-        
+        line (0, 90, 800, 90)
+        line (400, 90, 400, 600)
+        text("Mit diesem Programm kannst du Schaltkreisschemas ausprobieren.", 20, 30)
+        text("Druecke fuer dieses Menu die Taste A.", 20, 60) 
+        text("Druecke B fuer die Serienschaltung.", 20, 130)
+        text("Druecke C fuer die Paralleschaltung.", 420, 130)
+      
         
     if mode == 2:
         background(255, 255, 255)
@@ -119,7 +116,7 @@ def draw():
             mode = 2
         if (key == 'a' or key == 'A'):
             mode = 1
-        if (key == 'c' or key =='C'):
+        if (key == 'c' or key == 'C'):
             mode = 3
         
         
