@@ -1,3 +1,4 @@
+
 mode = 1
 
 def setup():
@@ -15,6 +16,9 @@ def draw():
         text("Druecke fuer dieses Menu die Taste A", 20, 40) 
         text("Druecke B fuer den Schaltkreis 1", 20, 100)
         text("Druecke C fuer den Schaltkreis 2", 420, 100)
+
+
+
         
         
     if mode == 2:
