@@ -6,6 +6,9 @@ def setup():
     background(255, 255, 255)
     fill(0,0,0)
     textSize(20)
+    myFont = createFont("Georgia", 20);
+    textFont(myFont);
+
 def draw():
     global mode
     strokeWeight(10)
@@ -14,21 +17,22 @@ def draw():
         fill(0,0,0)
         line (0, 90, 800, 90)
         line (400, 90, 400, 600)
-        text("Mit diesem Programm kannst du Schaltkreisschemas ausprobieren.", 20, 30)
-        text("Druecke fuer dieses Menu die Taste A.", 20, 60) 
-        text("Druecke B fuer die Serienschaltung.", 20, 130)
-        text("Druecke C fuer die Paralleschaltung.", 420, 130)
+        text(u"Mit diesem Programm kannst du Schaltkreisschemas ausprobieren.", 20, 30)
+        text(u"Drücke für dieses Menu die Taste A.", 20, 60) 
+        text(u"Drücke Taste B für die Serienschaltung.", 20, 140)
+        text(u"Drücke Taste C für die Paralleschaltung.", 420, 140)
         bild1 = loadImage("Serienschaltung.jpg")
-        image(bild1, 70, 190, 260, 220)
+        image(bild1, 10, 167, 375.5, 180)  #146
         bild2 = loadImage("Parallelschaltung.jpg")
-        image(bild2, 470, 190, 260, 220)
-      
+        image(bild2, 407, 190, 390, 159.5)
+        
+
         
     if mode == 2:
         background(255, 255, 255)
         fill(0,0,0)
-        text("Druecke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)
-        text("Druecke A, um zum Menu zurueckzukehren.", 50, 460)
+        text(u"Drücke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)
+        text(u"Drücke Taste A, um zum Menu zurückzukehren.", 50, 460)
         if mousePressed == True:
             fill(250, 255, 0)
             circle (200, 100, 100)
@@ -73,8 +77,8 @@ def draw():
     if mode == 3:
         background(255, 255, 255)
         fill(0,0,0)
-        text("Druecke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)
-        text("Druecke A, um zum Menu zuruckzukehren", 50, 460)
+        text(u"Drücke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)
+        text(u"Drücke Taste A, um zum Menu zuruckzukehren", 50, 460)
         if mousePressed == True:
             fill(255, 255, 0)
             circle (300, 190, 100)
