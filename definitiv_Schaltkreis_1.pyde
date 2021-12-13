@@ -48,37 +48,34 @@ def draw():
             circle (600, 100, 100)
             bild = loadImage("Batterie_Leer.png")
             image(bild, 270, 290, 60, 20)
+            
+        line (50, 100, 150, 100)    #Balken oben horizontal Teil 2 (ganz links)
+        circle (200, 100, 100)      #Lampe 1
+        line(165, 65, 235, 135)     #Diagonalbalken
+        line(165, 135, 235, 65)     #Diagonalbalken
+
+        line (250, 100, 350, 100)   #Balken oben horizontal Teil 2 
+        circle (400, 100, 100)      #Lampe 2
+        line(365, 65, 435, 135)     #Diagonalbalken
+        line(365, 135, 435, 65)     #Diagonalbalken
+
+        line(450, 100, 550, 100)    #Balken oben horizontal Teil 3 
+        circle(600, 100, 100)       #Lampe 3
+        line (565, 65, 635, 135)    #Diagonalbalken
+        line (565, 135, 635, 65)    #Diagonalbalken
         
-
-    
-        line (50, 100, 150, 100)
-        circle (200, 100, 100)
-        line(165, 65, 235, 135)
-        line(165, 135, 235, 65)
-
-        line (250, 100, 350, 100)
-        circle (400, 100, 100)
-        line(365, 65, 435, 135)
-        line(365, 135, 435, 65)
-
-        line(450, 100, 550, 100)
-        circle(600, 100, 100)
-        line (565, 65, 635, 135)
-        line (565, 135, 635, 65)
-    
-        line (650, 100, 700, 100)
-        line (700, 100, 700, 300)
-        line (700, 300, 335, 300)
-    
-        line (265, 300, 50, 300)
-        line (50, 300, 50, 100)
+        line (650, 100, 700, 100)   #Balken oben horizontal Teil 4 (ganz rechts)
+        line (700, 100, 700, 300)   #Balken vertikal rechts
+        line (50, 300, 50, 100)     #Balken vertikal links
+        line (700, 300, 335, 300)   #Balken unten horizontal rechts
+        line (265, 300, 50, 300)    #Balken unten horizontal links
         
         
     if mode == 3:                                                                  #Parallelschaltung durch Modus 3 mit Taste 3 anwählbar)
         background(255, 255, 255)                                                  #Darstellungsfunktionen
         fill(0,0,0)
         text(u"Drücke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)      #Benutzeranleitungen
-        text(u"Drücke Taste 1, um zum Menu zurückzukehren", 50, 460)
+        text(u"Drücke Taste 1, um zum Menu zurückzukehren.", 50, 460)
         if mousePressed == True:                       #Interaktion: wenn Maus gedrückt
             fill(255, 255, 0)                          #Lampen werden gelb gefüllt, Bild eines geladenen Akkus erscheint 
             circle (300, 190, 100)
