@@ -1,4 +1,3 @@
-
 mode = 1                                 #Standartmodus Hauptmenü (bei Start und durch Taste anwählbar)
 
 def setup():
