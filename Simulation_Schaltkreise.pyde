@@ -1,4 +1,5 @@
 from Schaltkreise import Serie, Parallel
+from Bauteile import Lampe
 mode = 1                                 #Standartmodus Hauptmenü (bei Start und durch Taste anwählbar)
 
 def setup():
@@ -48,7 +49,20 @@ def draw():
         fill(0,0,0)
         text(u" Nun ist die Lampe ganz rechts beschädigt (schwarz bedeutet kaputt),\n dies bedeutet für die Serienschaltung, dass der gesamte Stromkreis beschädigt ist. \n Wenn du die Maus gedrückt hältst, siehst du, dass trotz der Stromquelle keine Leuchte erhellt.", 50, 420)
         text(u" Drücke Taste 1, um zum Menu zurückzukehren. \n Drücke die Taste 2 um die Paralellschaltung auszuprobieren. \n Drücke die Taste 4 um die Serienschaltung mit einer beschädigten Leuchte auszuprobieren \n Drücke die Taste 5 um die Paralellschaltung mit einer beschädigten Leuchte auszuprobieren", 50, 540)                      #Serienschaltung durch Modus 2 mit Taste 2 anwählbar)
-
+        Serie()
+        fill(0,0,0)
+        circle (600, 100, 100)
+        fill (255, 255, 255)
+        Lampe(200, 100)
+        Lampe(400, 100)
+    if mode == 5:
+        background(255, 255, 255)                                                #Darstellungsfunktionen
+        fill(0,0,0)
+        text(u" Nun ist die Lampe ganz rechts beschädigt (schwarz bedeutet kaputt),\n dies bedeutet für die Parallelschaltung, dass die anderen Leuchten weiterscheinen. \n Wenn du die Maus gedrückt hältst, siehst du, dass die ganzen Leuchten immernoch erhellen.", 50, 420)
+        text(u" Drücke Taste 1, um zum Menu zurückzukehren. \n Drücke die Taste 2 um die Paralellschaltung auszuprobieren. \n Drücke die Taste 4 um die Serienschaltung mit einer beschädigten Leuchte auszuprobieren \n Drücke die Taste 5 um die Paralellschaltung mit einer beschädigten Leuchte auszuprobieren", 50, 540)                      #Serienschaltung durch Modus 2 mit Taste 2 anwählbar)
+        Parallel()
+        fill(0,0,0)
+        circle(700,190,100)
     
     if (keyPressed):                                    #Tastenfunktionen mit Zuweisung zu den entsprechenden Modi
         if (key == '1' or key == '+'):                  #Hauptmenü
