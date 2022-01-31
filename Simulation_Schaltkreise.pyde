@@ -17,7 +17,7 @@ def draw():
         background(255, 255, 255)        #Darstellungsfunktionen
         fill(0,0,0)
 
-        text(u" Mit diesem Programm kannst du Schaltkreisschemas ausprobieren.\n \n Interessant wird es allerdings erst, wenn in den Schaltkreisen ein Problem auftritt.\n Mit den Tasten 4 und 5 kannst du ausprobieren, was passiert, wenn eine der Leuchten defekt ist. \n Drücke die Taste 1, um zurück in dieses Menü zu gelangen. \n Du kannst auch direkt mit den entsprechenden Tasten von Schaltung zu Schaltung wechseln .", 20, 30)    #Benutzeranleitungen
+        text(u" Mit diesem Programm kannst du Schaltkreisschemas ausprobieren.\n \n Interessant wird es allerdings erst, wenn in den Schaltkreisen ein Problem auftritt.\n Mit den Tasten 3 und 5 kannst du ausprobieren, was passiert, wenn eine der Leuchten defekt ist. \n Drücke die Taste 1, um zurück in dieses Menü zu gelangen. \n Du kannst auch direkt mit den entsprechenden Tasten von Schaltung zu Schaltung wechseln.", 20, 30)    #Benutzeranleitungen
 
         text(u"Drücke Taste 2 für die Serienschaltung.", 20, 290)
         text(u"Drücke Taste 3 für die defekte Serieschaltung.", 20, 650)
