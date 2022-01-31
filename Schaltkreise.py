@@ -64,20 +64,3 @@ def Parallel():
     save("data/Parallelschaltung.jpg")     #Bild des Schaltkreises wird gespeichert, welches auf Startseite in Uebersicht eingefuegt wird.
   
     
-#def Seriekap():
-    Serie()
-    if mousePressed == True:                  #Interaktion: wenn Maus gedrueckt
-        fill(250, 255, 0)                     #Lampen werden gelb gefuellt, Bild eines geladenen Akkus erscheint        
-        circle (200, 100, 100)
-        circle (400, 100, 100)
-        circle (600, 100, 100)
-        bild1 = loadImage("Batterie_Voll.png")
-        image(bild1, 270, 290, 60, 20)
-           
-    else:                                     #Zustand, wenn Maus nicht gedrueckt ist
-        fill(255,255,255)                     #Lampen werden weiss gefuellt, Bild eines entladenen Akkus erscheint
-        circle (200, 100, 100)
-        circle (400, 100, 100)
-        circle (600, 100, 100)
-        bild = loadImage("Batterie_Leer.png")
-        image(bild, 270, 290, 60, 20)

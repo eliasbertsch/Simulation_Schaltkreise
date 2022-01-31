@@ -55,6 +55,7 @@ def draw():
         fill (255, 255, 255)
         Lampe(200, 100)
         Lampe(400, 100)
+        
     if mode == 5:
         background(255, 255, 255)                                                #Darstellungsfunktionen
         fill(0,0,0)
