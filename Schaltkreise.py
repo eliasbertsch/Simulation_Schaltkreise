@@ -55,8 +55,11 @@ def Parallel():
     line(50, 300, 700, 300)    #Verbindungslinie unten horizontal
     line (50, 100, 50, 160)    #Verbindungslinie vertikal S1
     line (50, 230, 50, 300)    #Verbindungslinie vertikal S1
-    line (300, 100, 300, 300)  #Verbindungslinie vertikal 1
-    line (500, 100, 500, 300)  #Verbindungslinie vertikal 2
-    line(700, 100, 700, 300)   #Verbindungslinie vertikal 3
+    line (300, 100, 300, 140)  #Verbindungslinie vertikal 1
+    line (300, 240, 300, 300)
+    line (500, 100, 500, 140)  #Verbindungslinie vertikal 2
+    line (500, 240, 500, 300)
+    line (700, 100, 700, 140)   #Verbindungslinie vertikal 3
+    line (700, 240, 700, 300)
     save("data/Parallelschaltung.jpg")
     
