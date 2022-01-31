@@ -1,3 +1,4 @@
+from Bauteile import Lampe
 mode = 1                                 #Standartmodus Hauptmenü (bei Start und durch Taste anwählbar)
 
 def setup():
@@ -49,19 +50,21 @@ def draw():
             image(bild, 270, 290, 60, 20)
             
         line (50, 100, 150, 100)    #Balken oben horizontal Teil 2 (ganz links)
-        circle (200, 100, 100)      #Lampe 1
-        line(165, 65, 235, 135)     #Diagonalbalken
-        line(165, 135, 235, 65)     #Diagonalbalken
-
+        #circle (200, 100, 100)      #Lampe 1
+        #line(165, 65, 235, 135)     #Diagonalbalken
+        #line(165, 135, 235, 65)     #Diagonalbalken
+        for x in range(200,601,200):
+            Lampe(x,100)
+        
         line (250, 100, 350, 100)   #Balken oben horizontal Teil 2 
-        circle (400, 100, 100)      #Lampe 2
-        line(365, 65, 435, 135)     #Diagonalbalken
-        line(365, 135, 435, 65)     #Diagonalbalken
+#        circle (400, 100, 100)      #Lampe 2
+ #       line(365, 65, 435, 135)     #Diagonalbalken
+  #      line(365, 135, 435, 65)     #Diagonalbalken
 
         line(450, 100, 550, 100)    #Balken oben horizontal Teil 3 
-        circle(600, 100, 100)       #Lampe 3
-        line (565, 65, 635, 135)    #Diagonalbalken
-        line (565, 135, 635, 65)    #Diagonalbalken
+       # circle(600, 100, 100)       #Lampe 3
+        #line (565, 65, 635, 135)    #Diagonalbalken
+       # line (565, 135, 635, 65)    #Diagonalbalken
         
         line (650, 100, 700, 100)   #Balken oben horizontal Teil 4 (ganz rechts)
         line (700, 100, 700, 300)   #Balken vertikal rechts
