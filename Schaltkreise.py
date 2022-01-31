@@ -32,7 +32,7 @@ def Serie():
     
 def Parallel():
     if mousePressed == True:                     #Interaktion: wenn Maus gedrueckt
-        color(orange)                          #Lampen werden gelb gefuellt, Bild eines geladenen Akkus erscheint 
+        fill(250, 255, 0)                         #Lampen werden gelb gefuellt, Bild eines geladenen Akkus erscheint 
         circle (300, 190, 100)
         circle (500, 190, 100)
         circle (700, 190, 100)
