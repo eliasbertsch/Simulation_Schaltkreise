@@ -32,22 +32,22 @@ def draw():
     if mode == 2:   
         background(255, 255, 255)                                                          #Darstellungsfunktionen
         fill(0,0,0)
-        text(u" Halte die Maus gedrückt, um den Schaltkreis auszuprobieren.", 50, 420)              #Benutzeranleitungen
+        text(u" Halte die Maus gedrückt, um dem Schaltkreis eine Stromquelle hinzuzufügen.", 50, 420)              #Benutzeranleitungen
         text(u" Drücke Taste 1, um zum Menu zurückzukehren. \n Drücke die Taste 2 um die Paralellschaltung auszuprobieren. \n Drücke die Taste 4 um die Serienschaltung mit einer beschädigten Leuchte auszuprobieren \n Drücke die Taste 5 um die Paralellschaltung mit einer beschädigten Leuchte auszuprobieren", 50, 460)                      #Serienschaltung durch Modus 2 mit Taste 2 anwählbar)
         Serie()
         
     if mode == 3:                                                                  #Parallelschaltung durch Modus 3 mit Taste 3 anwählbar)
         background(255, 255, 255)                                                  #Darstellungsfunktionen
         fill(0,0,0)
-        text(u" Halte die Maus gedrückt, um den Schaltkreis auszuprobieren.", 50, 420)              #Benutzeranleitungen
+        text(u" Halte die Maus gedrückt, um dem Schaltkreis eine Stromquelle hinzuzufügen.", 50, 420)              #Benutzeranleitungen
         text(u" Drücke Taste 1, um zum Menu zurückzukehren. \n Drücke die Taste 2 um die Paralellschaltung auszuprobieren. \n Drücke die Taste 4 um die Serienschaltung mit einer beschädigten Leuchte auszuprobieren \n Drücke die Taste 5 um die Paralellschaltung mit einer beschädigten Leuchte auszuprobieren", 50, 460)                      #Serienschaltung durch Modus 2 mit Taste 2 anwählbar)
         Parallel()
         
     if mode == 4:
         background(255, 255, 255)                                                          #Darstellungsfunktionen
         fill(0,0,0)
-        text(u" Nun ist die Lampe ganz rechts beschädigt (schwarz bedeutet kaputt), dies bedeutet für die Serienschaltung,\n dass der gesamte Stromkreis beschädigt ist. \n Wenn du die Maus gedrückt hältst, siehst du, dass trotz der Stromquelle keine Leuchte erhellt.", 50, 420)
-        text(u" Drücke Taste 1, um zum Menu zurückzukehren. \n Drücke die Taste 2 um die Paralellschaltung auszuprobieren. \n Drücke die Taste 4 um die Serienschaltung mit einer beschädigten Leuchte auszuprobieren \n Drücke die Taste 5 um die Paralellschaltung mit einer beschädigten Leuchte auszuprobieren", 50, 520)                      #Serienschaltung durch Modus 2 mit Taste 2 anwählbar)
+        text(u" Nun ist die Lampe ganz rechts beschädigt (schwarz bedeutet kaputt),\n dies bedeutet für die Serienschaltung, dass der gesamte Stromkreis beschädigt ist. \n Wenn du die Maus gedrückt hältst, siehst du, dass trotz der Stromquelle keine Leuchte erhellt.", 50, 420)
+        text(u" Drücke Taste 1, um zum Menu zurückzukehren. \n Drücke die Taste 2 um die Paralellschaltung auszuprobieren. \n Drücke die Taste 4 um die Serienschaltung mit einer beschädigten Leuchte auszuprobieren \n Drücke die Taste 5 um die Paralellschaltung mit einer beschädigten Leuchte auszuprobieren", 50, 540)                      #Serienschaltung durch Modus 2 mit Taste 2 anwählbar)
 
     
     if (keyPressed):                                    #Tastenfunktionen mit Zuweisung zu den entsprechenden Modi
