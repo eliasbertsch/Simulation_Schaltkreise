@@ -1,5 +1,5 @@
 from Schaltkreise import Serie, Parallel
-mode = 1                                 #Standartmodus Hauptmenü (bei Start und durch Taste anwählbar)
+mode = 1                                 #Standartmodus Hauptmenue (bei Start und durch Taste anwählbar)
 
 def setup():
     size(800, 600)                       #Fenstergrösse          
@@ -42,7 +42,7 @@ def draw():
         Parallel()
 
     if (keyPressed):                                    #Tastenfunktionen mit Zuweisung zu den entsprechenden Modi
-        if (key == '1' or key == '+'):                  #Hauptmenü
+        if (key == '1' or key == '+'):                  #Hauptmenue
             mode = 1
         if (key == '2' or key == '"' or key == '@'):    #Serienschaltung
             mode = 2
