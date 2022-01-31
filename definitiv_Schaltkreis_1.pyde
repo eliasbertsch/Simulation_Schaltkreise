@@ -1,4 +1,4 @@
-from Schaltkreise import Serie
+from Schaltkreise import Serie, Parallel
 mode = 1                                 #Standartmodus Hauptmenü (bei Start und durch Taste anwählbar)
 
 def setup():
@@ -31,8 +31,8 @@ def draw():
     if mode == 2:   
         background(255, 255, 255)                                                          #Darstellungsfunktionen
         fill(0,0,0)
-        text(u"Drcke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)              #Benutzeranleitungen
-        text(u"Drcke Taste 1, um zum Menu zurckzukehren.", 50, 460)                                                                       #Serienschaltung durch Modus 2 mit Taste 2 anwählbar)
+        text(u"Drücke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)              #Benutzeranleitungen
+        text(u"Drücke Taste 1, um zum Menu zurückzukehren.", 50, 460)                               #Serienschaltung durch Modus 2 mit Taste 2 anwählbar)
         Serie()
         
         

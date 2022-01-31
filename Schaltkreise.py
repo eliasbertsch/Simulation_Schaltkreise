@@ -30,44 +30,34 @@ def Serie():
     line (265, 300, 50, 300)    #Balken unten horizontal links
     
 def Parallel():
-            if mousePressed == True:                       #Interaktion: wenn Maus gedrückt
-            fill(255, 255, 0)                          #Lampen werden gelb gefüllt, Bild eines geladenen Akkus erscheint 
-            circle (300, 190, 100)
-            circle (500, 190, 100)
-            circle (700, 190, 100)
-            bild1 = loadImage("Batterie_VollR.png")
-            image(bild1, 40, 165, 20, 60)
+    if mousePressed == True:                     #Interaktion: wenn Maus gedrckt
+        fill(255, 255, 0)                          #Lampen werden gelb gefllt, Bild eines geladenen Akkus erscheint 
+        circle (300, 190, 100)
+        circle (500, 190, 100)
+        circle (700, 190, 100)
+        bild1 = loadImage("Batterie_VollR.png")
+        image(bild1, 40, 165, 20, 60)
         
-        else:                                      #Zustand, wenn Maus nicht gedrückt ist
-            fill(255,255,255)                      #Lampen werden weiss gefüllt, Bild eines entladenen Akkus erscheint
-            circle (300, 190, 100)
-            circle (500, 190, 100)
-            circle (700, 190, 100)
+    else:                                      #Zustand, wenn Maus nicht gedrckt ist
+        fill(255,255,255)                      #Lampen werden weiss gefllt, Bild eines entladenen Akkus erscheint
+        circle (300, 190, 100)
+        circle (500, 190, 100)
+        circle (700, 190, 100)
         
-            bild = loadImage("Batterie_LeerR.png")
-            image(bild, 40, 165, 20, 60)
-         
-        strokeWeight(10)           #Liniendicke
+        bild = loadImage("Batterie_LeerR.png")
+        image(bild, 40, 165, 20, 60)
     
-        line(50, 100, 700, 100)    #Verbindungslinie oben horizontal
-        line(50, 300, 700, 300)    #Verbindungslinie unten horizontal
+    for x in range(300,701,200):
+        Lampe(x,100)
+        
+    strokeWeight(10)           #Liniendicke
     
-        line (50, 100, 50, 160)    #Verbindungslinie vertikal S1
-        line (50, 230, 50, 300)    #Verbindungslinie vertikal S1
-    
-        line (300, 100, 300, 300)   #Verbindungslinie vertikal 1
-        circle (300, 190, 100)     #Lampe 1
-        line(265, 155, 335, 225)   #Diagonalbalken
-        line(265, 225, 335, 155)   #Diagonalbalken
-
-        line (500, 100, 500, 300)  #Verbindungslinie vertikal 2
-        circle (500, 190, 100)     #Lampe 2
-        line(465, 155, 535, 225)   #Diagonalbalken
-        line(465, 225, 535, 155)   #Diagonalbalken
-
-        line(700, 100, 700, 300)   #Verbindungslinie vertikal 3
-        circle(700, 190, 100)      #Lampe 3
-        line (665, 155, 735, 225)  #Diagonalbalken
-        line (665, 225, 735, 155)  #Diagonalbalken
+    line(50, 100, 700, 100)    #Verbindungslinie oben horizontal
+    line(50, 300, 700, 300)    #Verbindungslinie unten horizontal
+    line (50, 100, 50, 160)    #Verbindungslinie vertikal S1
+    line (50, 230, 50, 300)    #Verbindungslinie vertikal S1
+    line (300, 100, 300, 300)   #Verbindungslinie vertikal 1
+    line (500, 100, 500, 300)  #Verbindungslinie vertikal 2
+    line(700, 100, 700, 300)   #Verbindungslinie vertikal 3
 
     
