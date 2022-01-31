@@ -2,10 +2,10 @@ from Bauteile import Lampe                    #Funktion Lampe aus dem Tab Bautei
 
 def Serie():
     if mousePressed == True:                  #Interaktion: wenn Maus gedrueckt
-        fill(250, 255, 0)                     #Lampen werden gelb gefuellt, Bild eines geladenen Akkus erscheint        
-        circle (200, 100, 100)
-        circle (400, 100, 100)
-        circle (600, 100, 100)
+        fill(250, 255, 0)                    #Lampen werden gelb gefuellt, Bild eines geladenen Akkus erscheint        
+        circle(200, 100, 100)
+        circle(400, 100, 100)
+        circle(600, 100, 100)
         bild1 = loadImage("Batterie_Voll.png")
         image(bild1, 270, 290, 60, 20)
            
