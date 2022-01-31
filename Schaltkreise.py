@@ -28,6 +28,7 @@ def Serie():
     line (50, 300, 50, 100)     #Balken vertikal links
     line (700, 300, 335, 300)   #Balken unten horizontal rechts
     line (265, 300, 50, 300)    #Balken unten horizontal links
+    save("data/Serienschaltung.jpg")
     
 def Parallel():
     if mousePressed == True:                     #Interaktion: wenn Maus gedrckt
@@ -48,16 +49,14 @@ def Parallel():
         image(bild, 40, 165, 20, 60)
     
     for x in range(300,701,200):
-        Lampe(x,100)
-        
-    strokeWeight(10)           #Liniendicke
-    
+        Lampe(x,190)
+           
     line(50, 100, 700, 100)    #Verbindungslinie oben horizontal
     line(50, 300, 700, 300)    #Verbindungslinie unten horizontal
     line (50, 100, 50, 160)    #Verbindungslinie vertikal S1
     line (50, 230, 50, 300)    #Verbindungslinie vertikal S1
-    line (300, 100, 300, 300)   #Verbindungslinie vertikal 1
+    line (300, 100, 300, 300)  #Verbindungslinie vertikal 1
     line (500, 100, 500, 300)  #Verbindungslinie vertikal 2
     line(700, 100, 700, 300)   #Verbindungslinie vertikal 3
-
+    save("data/Parallelschaltung.jpg")
     

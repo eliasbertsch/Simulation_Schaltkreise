@@ -15,24 +15,24 @@ def draw():
     if mode == 1:                        #wenn Modus =1
         background(255, 255, 255)        #Darstellungsfunktionen
         fill(0,0,0)
-        line (0, 90, 800, 90)
-        line (400, 90, 400, 600)
+
         text(u"Mit diesem Programm kannst du Schaltkreisschemas ausprobieren.", 20, 30)    #Benutzeranleitungen
         text(u"Drücke für dieses Menu die Taste 1.", 20, 60) 
         text(u"Drücke Taste 2 für die Serienschaltung.", 20, 140)
         text(u"Drücke Taste 3 für die Paralleschaltung.", 420, 140)
         bild1 = loadImage("Serienschaltung.jpg")                                           #Bild laden
-        image(bild1, 10, 167, 375.5, 180)                                                  #Bildeigenschaften
+        image(bild1, 10, 167, 400, 300)                                                  #Bildeigenschaften
         bild2 = loadImage("Parallelschaltung.jpg")
-        image(bild2, 407, 190, 390, 159.5)
-        
+        image(bild2, 407, 190, 400, 300)
+        line (0, 90, 800, 90)
+        line (400, 90, 400, 600)
 
         
     if mode == 2:   
         background(255, 255, 255)                                                          #Darstellungsfunktionen
         fill(0,0,0)
         text(u"Drücke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)              #Benutzeranleitungen
-        text(u"Drücke Taste 1, um zum Menu zurückzukehren.", 50, 460)                               #Serienschaltung durch Modus 2 mit Taste 2 anwählbar)
+        text(u"Drücke Taste 1, um zum Menu zurückzukehren.", 50, 460)                      #Serienschaltung durch Modus 2 mit Taste 2 anwählbar)
         Serie()
         
         
