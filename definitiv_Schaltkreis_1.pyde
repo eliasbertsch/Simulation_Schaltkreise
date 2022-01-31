@@ -27,14 +27,12 @@ def draw():
         line (0, 90, 800, 90)
         line (400, 90, 400, 600)
 
-        
     if mode == 2:   
         background(255, 255, 255)                                                          #Darstellungsfunktionen
         fill(0,0,0)
         text(u"Drücke die Maus, um den Schaltkreis auszuprobieren.", 50, 420)              #Benutzeranleitungen
         text(u"Drücke Taste 1, um zum Menu zurückzukehren.", 50, 460)                      #Serienschaltung durch Modus 2 mit Taste 2 anwählbar)
         Serie()
-        
         
     if mode == 3:                                                                  #Parallelschaltung durch Modus 3 mit Taste 3 anwählbar)
         background(255, 255, 255)                                                  #Darstellungsfunktionen
