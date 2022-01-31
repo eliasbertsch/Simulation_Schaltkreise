@@ -3,3 +3,4 @@ def Lampe(LX,LY):                                #Definition der Funktion Lampe,
     line(LX - 35,LY - 35, LX + 35, LY + 35)      #Diagonale Linie zeichnen abhaengig von dem gewaehlten X- und Y- Wert
     line(LX - 35,LY + 35, LX + 35, LY - 35)      #Diagonale Linie zeichnen abhaengig von dem gewaehlten X- und Y- Wert
     
+#def Lampenfarbe
